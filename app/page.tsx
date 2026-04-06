@@ -7,7 +7,6 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { PopularItems } from "@/components/sections/PopularItems";
 import { FeaturedRestaurants } from "@/components/sections/FeaturedRestaurants";
 import { FoodCategories } from "@/components/sections/FoodCategories";
-import { PromoFeatures } from "@/components/sections/PromoFeatures";
 import { AppInstall } from "@/components/sections/AppInstall";
 import { PromotionalBanners } from "@/components/sections/PromotionalBanners";
 import { CTABanner } from "@/components/sections/CTABanner";
@@ -23,7 +22,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Content Sections */}
-      <main className="grow mx-auto">
+      <main>
         {/* Hero Section with gradients and search */}
         <Hero />
 
@@ -42,9 +41,7 @@ export default function Home() {
         {/* Multi-item horizontal categories */}
         <FoodCategories />
 
-        {/* Stripe featuring Daily discounts, Live Tracking etc. */}
-        <PromoFeatures />
-
+    
         {/* App install section with phone mockups */}
         <AppInstall />
 

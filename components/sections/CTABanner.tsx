@@ -21,7 +21,7 @@ export const CTABanner = () => (
     </div>
 
     {/* Content */}
-    <div className="max-w-5xl !mx-auto px-6 sm:px-10 lg:px-12 xl:px-8 relative z-10 flex flex-col items-center text-center gap-12">
+    <div className="max-w-5xl mx-auto px-6 sm:px-10 lg:px-12 xl:px-8 relative z-10 flex flex-col items-center text-center gap-12">
       <motion.h2
         initial={{ opacity: 0, scale: 0.9, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}

@@ -32,7 +32,7 @@ const steps = [
 ];
 
 export const HowItWorks = () => (
-  <section className="py-24 lg:py-32" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #FFFBEF 100%)" }}>
+  <section className="py-10 lg:py-20" style={{ background: "linear-gradient(180deg, #FEFAF1 0%, #FFFFFF 100%)" }}>
     <div className="max-w-7xl !mx-auto px-6 sm:px-10 lg:px-12 xl:px-8">
       {/* Title with yellow drop shadow effect */}
       <motion.h2
@@ -40,8 +40,8 @@ export const HowItWorks = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-4xl lg:text-5xl font-extrabold text-center mb-20 lg:mb-28 drop-shadow-sm"
-        style={{ color: "#FFB800" }}
+        className="text-3xl lg:text-4xl font-extrabold text-center mb-20 lg:mb-10 drop-shadow-sm"
+        style={{ color: "#F17228" }}
       >
         How does it work
       </motion.h2>
@@ -59,26 +59,25 @@ export const HowItWorks = () => (
           >
             {/* Soft yellow circle with shadow */}
             <div
-              className="w-40 h-40 rounded-full flex items-center justify-center shadow-2xl group-hover:shadow-[0_20px_50px_rgba(255,184,0,0.3)] transition-all duration-500 scale-100 group-hover:scale-105 mb-8"
-              style={{ background: "rgba(255, 184, 0, 0.1)" }}
+              className="mb-8"
             >
-              <div className="relative w-20 h-20">
+              <div className="relative w-24 h-24">
                 <Image
                   src={s.image}
                   alt={s.title}
                   fill
-                  className="object-contain group-hover:rotate-6 transition-transform duration-500"
-                  sizes="80px"
+                  className="object-contain transition-transform duration-500"
+                  sizes="160px"
                 />
               </div>
             </div>
 
             {/* Step Label */}
             <div className="flex flex-col gap-2">
-              <span className="text-secondary-text font-extrabold text-lg lg:text-xl group-hover:text-primary transition-colors">
+              <span className="text-secondary-text font-extrabold text-sm lg:text-base group-hover:text-primary transition-colors">
                 {s.title}
               </span>
-              <p className="text-gray-400 text-base leading-relaxed max-w-[200px]">
+              <p className="text-gray-400 text-sm leading-relaxed ">
                 {s.desc}
               </p>
             </div>

@@ -15,7 +15,7 @@ const categories = [
 ];
 
 export const FoodCategories = () => (
-  <section className="py-24 lg:py-32" style={{ background: "#FEFAF1" }}>
+  <section className="py-10 lg:py-20" style={{ background: "#FEFAF1" }}>
     <div className="max-w-7xl !mx-auto px-6 sm:px-10 lg:px-12 xl:px-8">
       {/* Centered Header Row */}
       <div className="flex flex-col sm:flex-row items-center justify-between mb-16 lg:mb-24 gap-6">
@@ -23,7 +23,7 @@ export const FoodCategories = () => (
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="text-4xl lg:text-5xl font-extrabold text-gray-800 drop-shadow-sm"
+          className="text-3xl lg:text-4xl font-extrabold text-gray-800 drop-shadow-sm"
         >
           Search by Food
         </motion.h2>
@@ -57,7 +57,7 @@ export const FoodCategories = () => (
             viewport={{ once: true }}
             className="flex flex-col items-center gap-6 shrink-0 cursor-pointer group"
           >
-            <div className="relative w-40 h-40 lg:w-48 lg:h-48 rounded-full border-8 border-white shadow-[0_20px_50px_rgba(255,184,0,0.15)] group-hover:border-yellow-start group-hover:shadow-[0_30px_60px_rgba(255,184,0,0.3)] transition-all duration-500 scale-100 group-hover:scale-110">
+            <div className="relative w-40 h-40 lg:w-48 lg:h-48 rounded-full border-8 border-white shadow-[0_20px_50px_rgba(255,184,0,0.15)] group-hover:border-yellow-start group-hover:shadow-[0_20px_50px_rgba(255,184,0,0.3)] transition-all duration-500">
               <Image
                 src={cat.image}
                 alt={cat.name}

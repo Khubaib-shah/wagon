@@ -32,7 +32,7 @@ const offers = [
 ];
 
 export const CategoryOffers = () => (
-  <section className="py-20 lg:py-28 bg-white">
+  <section className="py-10 bg-white">
     <div className="max-w-7xl !mx-auto px-6 sm:px-10 lg:px-12 xl:px-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {offers.map((offer, i) => (
@@ -45,7 +45,7 @@ export const CategoryOffers = () => (
             className="group cursor-pointer flex flex-col gap-4"
           >
             {/* Card image */}
-            <div className="relative aspect-4/3 rounded-4xl overflow-hidden shadow-xl group-hover:shadow-2xl hover:scale-[1.02] transition-all duration-500">
+            <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
               <Image
                 src={offer.image}
                 alt={offer.title}
@@ -76,8 +76,8 @@ export const CategoryOffers = () => (
                 {offer.title}
               </h3>
               <div
-                className="inline-flex self-start px-4 py-1.5 rounded-xl font-bold text-xs lg:text-sm shadow-sm"
-                style={{ background: "rgba(241, 114, 40, 0.08)", color: "#F17228" }}
+                className="inline-flex self-start px-4 py-1.5 rounded-md font-bold text-xs lg:text-sm shadow-sm"
+                style={{ background: "rgba(241, 114, 40, 0.3)", color: "#F17228" }}
               >
                 {offer.days}
               </div>
